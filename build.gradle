@@ -12,6 +12,7 @@ repositories {
 }
 
 dependencies {
+    compile([group: 'org.ow2.asm', name: 'asm-all', version: version_asm])
 }
 
 jar {
