@@ -1,19 +1,10 @@
 package org.lolhens.fastreflect.mirror;
 
 /**
- * Created by PA on 05.07.2015.
+ * Created by LolHens on 05.07.2015.
  */
-public class FieldMirror<T> extends InvokableMirror<T> {
-    @Override
-    public T invoke(Object instance, Object... args) {
-        return getValue();
-    }
+public interface FieldMirror<T> extends InvokableMirror<T> {
+    public void setValue(T value);
 
-    public void setValue(T value) {
-
-    }
-
-    public T getValue() {
-        return null;
-    }
+    public T getValue();
 }
